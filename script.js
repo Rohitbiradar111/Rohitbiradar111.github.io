@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const resumeButton = document.querySelector('.resume-button');
-    const resumePDF = "https://github.com/Rohitbiradar111";
+    const resumePDF = "https://drive.google.com/file/d/1w-Kf4--LMi7Xq0kWD-1rHProG6TFNF1F/view?usp=sharing";
 
     if (resumeButton) {
         resumeButton.addEventListener('click', () => {
