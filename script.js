@@ -32,7 +32,7 @@ mobileMenuClose.addEventListener("click", () => {
 
 // Resume Button
 const resumePDF =
-  "https://drive.google.com/file/d/1w-Kf4--LMi7Xq0kWD-1rHProG6TFNF1F/view?usp=sharing";
+  "https://drive.google.com/file/d/1BO2t6VJl9kqqtfTTpkumP0y7pcQh7wt_/view?usp=sharing";
 
 document.querySelectorAll(".resume-btn").forEach((button) => {
   button.addEventListener("click", () => {
