@@ -18,67 +18,30 @@
 
 <body>
 
-    <!-- Mobile Menu and NavBar -->
-    <div id="mobile-menu-open">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-    </div>
-    <nav>
-        <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
-        <ul id="menu">
-            <li>
-                <a href="#home" class="nav-link active" data-target="home">Home</a>
-            </li>
-            <li>
-                <a href="#about" class="nav-link" data-target="about">About</a>
-            </li>
-            <li>
-                <a href="#experience" class="nav-link" data-target="experience">Experience</a>
-            </li>
-            <li>
-                <a href="#education" class="nav-link" data-target="education">Education</a>
-            </li>
-            <li>
-                <a href="#skills" class="nav-link" data-target="skills">Skills</a>
-            </li>
-            <li>
-                <a href="#projects" class="nav-link" data-target="projects">Projects</a>
-            </li>
-            <li>
-                <a href="#contact" class="nav-link" data-target="contact">Contact</a>
-            </li>
-        </ul>
-    </nav>
-
-    <!-- Home Section -->
     <section id="home">
         <div id="home-content">
-            <h1>Hello, I&apos;m <em>Rohit Biradar</em>.</h1>
-            <p>I&apos;m a frontend developer, focused on crafting clean and
+            <h1 id="name">Hello, I&apos;m <em>Rohit Biradar</em>.</h1>
+            <p id="occupation">I&apos;m a frontend developer, focused on crafting clean and
                 user friendly experiences.</p>
             <button class="resume-btn">Download Resume</button>
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="heading">About Me</h2>
-                </div>
-                <div class="col-md-8">
-                    <p>A computer science graduate with a passion for software engineering.</p>
-                    <p>Proven ability to learn new technologies quickly and apply them to real world problems.</p>
-                    <p>Seeking an entry level position where I can use my skills and knowledge to contribute to a team
-                        and make a positive impact on the company.</p>
-                </div>
+        <div>
+            <h2 class="heading">About Me</h2>
+            <div class="para">
+                <p>A computer science graduate with a passion for software engineering.</p>
+                <p>Proven ability to learn new technologies quickly and apply them to real world problems.
+                </p>
+                <p>Seeking an entry level position where I can use my skills and knowledge to contribute to
+                    a
+                    team
+                    and make a positive impact on the company.</p>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
     <section id="experience">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
@@ -101,10 +64,14 @@
                                 <strong>Axios</strong>.
                             </li>
                             <li>Applied form validation, filters, and pagination in assigned tasks.</li>
-                            <li>Communicated regularly with mentors and backend developers to resolve issues.</li>
-                            <li>Utilized <strong>Git</strong> for version control and <strong>GitHub</strong> for code
+                            <li>Communicated regularly with mentors and backend developers to resolve issues.
+                            </li>
+                            <li>Utilized <strong>Git</strong> for version control and <strong>GitHub</strong>
+                                for
+                                code
                                 reviews.</li>
-                            <li>Applied <strong>Redux Toolkit</strong> to build a notes module and practiced state
+                            <li>Applied <strong>Redux Toolkit</strong> to build a notes module and practiced
+                                state
                                 management
                                 patterns.</li>
                             <li>Followed coding standards, used .env files, and implemented environment-based
@@ -117,7 +84,6 @@
         </div>
     </section>
 
-    <!-- Education Section -->
     <section id="education">
         <h2 class="heading">Education</h2>
         <div class="education-block">
@@ -127,16 +93,11 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills">
         <h2 class="heading">Skills</h2>
-        <div class="container">
-            <div class="row">
+        <div>
+            <div>
                 <div class="skills-grid">
-                    <div class="skill-card"><a href="https://www.oracle.com/java/" target="_blank"><img
-                                src="https://skillicons.dev/icons?i=java" alt="java" /></a>
-                        <p>Java</p>
-                    </div>
                     <div class="skill-card"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                             target="_blank"><img src="https://skillicons.dev/icons?i=js" alt="JavaScript" /></a>
                         <p>JavaScript</p>
@@ -156,6 +117,10 @@
                     <div class="skill-card"><a href="https://www.typescriptlang.org/" target="_blank"><img
                                 src="https://skillicons.dev/icons?i=ts" alt="TypeScript" /></a>
                         <p>TypeScript</p>
+                    </div>
+                    <div class="skill-card"><a href="https://www.oracle.com/java/" target="_blank"><img
+                                src="https://skillicons.dev/icons?i=java" alt="java" /></a>
+                        <p>Java</p>
                     </div>
                     <div class="skill-card"><a href="https://git-scm.com/" target="_blank"><img
                                 src="https://skillicons.dev/icons?i=git" alt="Git" /></a>
@@ -214,12 +179,11 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects">
         <h2 class="heading">Projects</h2>
-        <div class="container">
-            <div class="row">
-                <div class="project shadow-large" data-demo="https://storage-management-project.vercel.app/"
+        <div>
+            <div id="projectContainer">
+                <div class="project" data-demo="https://storage-management-project.vercel.app/"
                     data-code="https://github.com/Rohitbiradar111/Storage-Management-Project">
                     <div class="project-image-container">
                         <img src="./public/Images/Storevia Website.png" alt="Storevia - Storage Manager Image"
@@ -228,9 +192,12 @@
                     <div class="project-info">
                         <h3>Storevia - Storage Manager</h3>
                         <p>
-                            Storevia is a file storage and sharing platform built with Next.js, TypeScript, TailwindCSS,
-                            Appwrite, and ShadCN. It features OTP-based authentication, a responsive dashboard, and
-                            supports uploading various file types with per-user and per-file limits. Users can manage
+                            Storevia is a file storage and sharing platform built with Next.js, TypeScript,
+                            TailwindCSS,
+                            Appwrite, and ShadCN. It features OTP-based authentication, a responsive dashboard,
+                            and
+                            supports uploading various file types with per-user and per-file limits. Users can
+                            manage
                             files with actions like rename, delete, and share, and use search and sort for easy
                             organization.
                         </p>
@@ -241,7 +208,7 @@
                     </div>
                 </div>
 
-                <div class="project shadow-large" data-demo="https://blog-project-seven-delta.vercel.app/"
+                <div class="project" data-demo="https://blog-project-seven-delta.vercel.app/"
                     data-code="https://github.com/Rohitbiradar111/Blog-Project">
                     <div class="project-image-container">
                         <img src="./public/Images/BlogNigma Website.png" alt="BlogNigma - Blog Website Image"
@@ -250,9 +217,12 @@
                     <div class="project-info">
                         <h3>BlogNigma - Blog Website</h3>
                         <p>
-                            BlogNigma is a modern blogging platform built with React, Vite, and TailwindCSS, featuring
-                            user authentication, a responsive UI, and rich text editing with TinyMCE. It uses Appwrite
-                            for backend services and file storage, Redux Toolkit for state management, and React Hook
+                            BlogNigma is a modern blogging platform built with React, Vite, and TailwindCSS,
+                            featuring
+                            user authentication, a responsive UI, and rich text editing with TinyMCE. It uses
+                            Appwrite
+                            for backend services and file storage, Redux Toolkit for state management, and React
+                            Hook
                             Form for input handling. Users can create, edit, and manage blog posts with ease.
                         </p>
                         <div class="button-container">
@@ -262,7 +232,7 @@
                     </div>
                 </div>
 
-                <div class="project shadow-large" data-demo="https://furnistorewebsite.netlify.app/"
+                <div class="project" data-demo="https://furnistorewebsite.netlify.app/"
                     data-code="https://github.com/Rohitbiradar111/Furniture-Store-Project">
                     <div class="project-image-container">
                         <img src="./public/Images/FurniStore Website.png"
@@ -271,11 +241,16 @@
                     <div class="project-info">
                         <h3>FurniStore - Furniture Store Website</h3>
                         <p>
-                            FurniStore is a modern, responsive furniture e-commerce platform built with React, Vite, and
+                            FurniStore is a modern, responsive furniture e-commerce platform built with React,
+                            Vite,
+                            and
                             TailwindCSS. It features OAuth login, route protection, dynamic routing, and state
-                            management with Redux. Key features include cart and wishlist, Razorpay payments, real-time
-                            form validation, international phone support, and SEO optimization. The app integrates
-                            various UI components and uses Clerk for Authentication and EmailJS for user messaging.
+                            management with Redux. Key features include cart and wishlist, Razorpay payments,
+                            real-time
+                            form validation, international phone support, and SEO optimization. The app
+                            integrates
+                            various UI components and uses Clerk for Authentication and EmailJS for user
+                            messaging.
                         </p>
                         <div class="button-container">
                             <button>Live Demo</button>
@@ -284,7 +259,7 @@
                     </div>
                 </div>
 
-                <div class="project shadow-large" data-demo="https://travel-website-project-eight.vercel.app/"
+                <div class="project" data-demo="https://travel-website-project-eight.vercel.app/"
                     data-code="https://github.com/Rohitbiradar111/Travel-Website-Project">
                     <div class="project-image-container">
                         <img src="./public/Images/Travado website.png" alt="Travado - Travel Website Image"
@@ -293,9 +268,13 @@
                     <div class="project-info">
                         <h3>Travado - Travel Website</h3>
                         <p>
-                            Travado is a responsive travel website landing page built with Next.js, TypeScript, and
-                            TailwindCSS. It features a striking hero section, camp showcases, an informative travel
-                            guide, a feature-rich highlights section, a call-to-action promoting the mobile app, and a
+                            Travado is a responsive travel website landing page built with Next.js, TypeScript,
+                            and
+                            TailwindCSS. It features a striking hero section, camp showcases, an informative
+                            travel
+                            guide, a feature-rich highlights section, a call-to-action promoting the mobile app,
+                            and
+                            a
                             comprehensive footer with site and social links.
                         </p>
                         <div class="button-container">
@@ -305,7 +284,7 @@
                     </div>
                 </div>
 
-                <div class="project shadow-large" data-demo="https://next-js-learn-ashen-eta.vercel.app/"
+                <div class="project" data-demo="https://next-js-learn-ashen-eta.vercel.app/"
                     data-code="https://github.com/Rohitbiradar111/Next-JS-Learn">
                     <div class="project-image-container">
                         <img src="./public/Images/NextJS App Router Course Website.png"
@@ -314,10 +293,13 @@
                     <div class="project-info">
                         <h3>Next.js App Router Course Website</h3>
                         <p>
-                            This is a foundational Next.js App Router project designed to explore core features like
+                            This is a foundational Next.js App Router project designed to explore core features
+                            like
                             styling methods, image and font optimization, nested routing, and data fetching with
-                            Postgres on Vercel. It covers search, pagination, server actions for data mutation, error
-                            handling, form validation, accessibility, authentication with NextAuth.js, and metadata
+                            Postgres on Vercel. It covers search, pagination, server actions for data mutation,
+                            error
+                            handling, form validation, accessibility, authentication with NextAuth.js, and
+                            metadata
                             setup for social sharing.
                         </p>
                         <div class="button-container">
@@ -327,7 +309,7 @@
                     </div>
                 </div>
 
-                <div class="project shadow-large" data-demo="https://music-academy-website-project.vercel.app/"
+                <div class="project" data-demo="https://music-academy-website-project.vercel.app/"
                     data-code="https://github.com/Rohitbiradar111/Music-Academy-website-Project">
                     <div class="project-image-container">
                         <img src="./public/Images/Music Academy Website.png" alt="Music Academy Website Image"
@@ -336,7 +318,8 @@
                     <div class="project-info">
                         <h3>Music Academy Website</h3>
                         <p>
-                            This is a Music Academy Website Project built to learn Next.js. Tech Stack used in this
+                            This is a Music Academy Website Project built to learn Next.js. Tech Stack used in
+                            this
                             project is Next.js, TypeScript, and Aceternity UI.
                         </p>
                         <div class="button-container">
@@ -346,8 +329,7 @@
                     </div>
                 </div>
 
-                <div class="project shadow-large"
-                    data-demo="https://rohitbiradar111.github.io/Github-Profile-Search-Project/"
+                <div class="project" data-demo="https://rohitbiradar111.github.io/Github-Profile-Search-Project/"
                     data-code="https://github.com/Rohitbiradar111/Github-Profile-Search-Project">
                     <div class="project-image-container">
                         <img src="./public/Images/Github Profile Search Website.png"
@@ -356,9 +338,13 @@
                     <div class="project-info">
                         <h3>Github Profile Search</h3>
                         <p>
-                            GitHub Profile Search is a responsive web app built with HTML, CSS, and JavaScript that lets
-                            users search GitHub profiles and view real-time data like avatars, bios, followers, and
-                            recent repositories. It features a clean card layout, error handling, and mobile-friendly
+                            GitHub Profile Search is a responsive web app built with HTML, CSS, and JavaScript
+                            that
+                            lets
+                            users search GitHub profiles and view real-time data like avatars, bios, followers,
+                            and
+                            recent repositories. It features a clean card layout, error handling, and
+                            mobile-friendly
                             design for a smooth user experience.
                         </p>
                         <div class="button-container">
@@ -368,7 +354,7 @@
                     </div>
                 </div>
 
-                <div class="project shadow-large" data-demo="https://myxtension.netlify.app/"
+                <div class="project" data-demo="https://myxtension.netlify.app/"
                     data-code="https://github.com/Rohitbiradar111/Browser-Extension-Project">
                     <div class="project-image-container">
                         <img src="./public/Images/MyXtension Website.png" alt="MyXtension - Browser Extension Image"
@@ -377,9 +363,13 @@
                     <div class="project-info">
                         <h3>MyXtension - Browser Extension</h3>
                         <p>
-                            MyXtension is a React-based browser extension that offers personalized greetings and dynamic
-                            background images on each refresh. It lets users input their name, set a main focus task,
-                            manage daily tasks, and maintain a ToDo list with options to add, complete, and reset tasks.
+                            MyXtension is a React-based browser extension that offers personalized greetings and
+                            dynamic
+                            background images on each refresh. It lets users input their name, set a main focus
+                            task,
+                            manage daily tasks, and maintain a ToDo list with options to add, complete, and
+                            reset
+                            tasks.
                         </p>
                         <div class="button-container">
                             <button>Live Demo</button>
@@ -388,7 +378,7 @@
                     </div>
                 </div>
 
-                <div class="project shadow-large" data-demo="https://product-listing-page-assignment-gilt.vercel.app/"
+                <div class="project" data-demo="https://product-listing-page-assignment-gilt.vercel.app/"
                     data-code="https://github.com/Rohitbiradar111/Product-Listing-Page-Assignment">
                     <div class="project-image-container">
                         <img src="./public/Images/Product Listing Page Website.png"
@@ -397,9 +387,15 @@
                     <div class="project-info">
                         <h3>Product Listing Page Website</h3>
                         <p>
-                            This is a responsive Product Listing Page built with React, TypeScript, and TailwindCSS. It
-                            displays products in a grid with filtering by category and price range, search by name, and
-                            sorting by price. It supports pagination (6 products per page) while preserving filters and
+                            This is a responsive Product Listing Page built with React, TypeScript, and
+                            TailwindCSS.
+                            It
+                            displays products in a grid with filtering by category and price range, search by
+                            name,
+                            and
+                            sorting by price. It supports pagination (6 products per page) while preserving
+                            filters
+                            and
                             handles loading and error states using data from FakeStoreAPI.
                         </p>
                         <div class="button-container">
@@ -409,7 +405,7 @@
                     </div>
                 </div>
 
-                <div class="project shadow-large" data-demo="https://certo-website-design.vercel.app/"
+                <div class="project" data-demo="https://certo-website-design.vercel.app/"
                     data-code="https://github.com/Rohitbiradar111/Certo-Website-Design">
                     <div class="project-image-container">
                         <img src="./public/Images/Certo Website Design.png" alt="Certo Website Design Image"
@@ -427,7 +423,7 @@
                     </div>
                 </div>
 
-                <div class="project shadow-large" data-demo="https://whats-app-web-clone-project.vercel.app/"
+                <div class="project" data-demo="https://whats-app-web-clone-project.vercel.app/"
                     data-code="https://github.com/Rohitbiradar111/WhatsApp-Web-Clone-Project">
                     <div class="project-image-container">
                         <img src="./public/Images/Whatsapp Web Clone Website.png" alt="WhatsApp Web Clone Website Image"
@@ -436,7 +432,8 @@
                     <div class="project-info">
                         <h3>WhatsApp Web Clone Website</h3>
                         <p>
-                            This is a WhatsApp Web Clone Project built using React, React Icons, React QR Code, React
+                            This is a WhatsApp Web Clone Project built using React, React Icons, React QR Code,
+                            React
                             Router.
                         </p>
                         <div class="button-container">
@@ -449,7 +446,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact">
         <h2 class="heading">Contact</h2>
         <p>Feel free to reach out to me at
@@ -461,6 +457,8 @@
         </p>
     </section>
 
+    <script src="./gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
     <script src="./script.js"></script>
     <script src="https://kit.fontawesome.com/7eeecf78bf.js" crossorigin="anonymous"></script>
 </body>
