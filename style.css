@@ -14,7 +14,7 @@ body {
   height: 100vh;
   padding: 15px;
   background-image: url("./public/Images/homePage.webp");
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
   background-position: center;
   border-top: 1px solid white;
@@ -61,7 +61,7 @@ body {
   padding: 15px;
   text-align: center;
   background-image: url("./public/Images/aboutPage.webp");
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -92,7 +92,7 @@ body {
   justify-content: center;
   align-items: center;
   background-image: url("./public/Images/experiencePage.webp");
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
   background-position: center;
   border-bottom: 1px solid white;
@@ -189,7 +189,7 @@ body {
   padding: 110px 3px;
   text-align: center;
   background-image: url("./public/Images/educationPage.webp");
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -227,7 +227,7 @@ body {
   text-align: center;
   overflow: hidden;
   background-image: url("./public/Images/skillsPage.webp");
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -266,7 +266,7 @@ body {
   text-align: center;
   overflow: hidden;
   background-image: url("./public/Images/projectsPage.webp");
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -348,7 +348,7 @@ body {
   padding: 180px;
   text-align: center;
   background-image: url("./public/Images/contactPage.webp");
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
   background-position: center;
   display: flex;
