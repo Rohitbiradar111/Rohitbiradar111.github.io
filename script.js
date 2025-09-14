@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   const resumePDF =
-    "https://drive.google.com/file/d/1Gg1jGsF6JcAufNnkdheSdniyaSjJtxfQ/view?usp=sharing";
+    "https://drive.google.com/file/d/10sL74a-gw756oRjc1JHRJ94wg89GmXtg/view?usp=sharing";
 
   document.querySelectorAll(".resume-btn").forEach((button) => {
     button.addEventListener("click", () => {
